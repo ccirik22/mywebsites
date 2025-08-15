@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iha.style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family: 'Oswald', sans-serif;">
+<nav>
+    <div class="nav-container" id="navbar" style="display: flex; align-items: flex-start;">
+        <img id="logo" src="images/logo.jpg.png" alt="">
+        <div class="firstnav">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; align-items: flex-start;">
+            <li data-en="ABOUT" data-tr="HAKKINDA" onclick="scrollToSection('About')">ABOUT</li>
+            <li data-en="HOW IT WORKS" data-tr="NASIL ÇALIŞIR" onclick="scrollToSection('Explanation')">HOW IT WORKS</li>
+            <li data-en="HISTORY" data-tr="TARİHÇE" onclick="scrollToSection('History')">HISTORY</li>
+            <li data-en="ACTIVITY FIELDS" data-tr="FAALİYET ALANLARI" onclick="scrollToSection('Activity')">ACTIVITY FIELDS</li>
+            <li data-en="REPORTING" data-tr="RAPORLAMA" onclick="scrollToSection('Reporting')">REPORTING</li>
+            <li data-en="CONTACT US" data-tr="İLETİŞİM" onclick="scrollToSection('Contact')">CONTACT US</li>
+            <li id="login1" data-en="LOGIN/SIGNUP" data-tr="GİRİŞ/KAYIT" data-bs-toggle="modal" data-bs-target="#loginSignupModal">LOGIN/SIGNUP</li>
+        </ul>
+      </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="bar">MENU<i class="fa-solid fa-bars" style="color: #FFD43B;"></i> </div>
+          </a>
+          <ul class="dropdown-menu">
+            <li data-en="ABOUT" data-tr="HAKKINDA" onclick="scrollToSection('About')">ABOUT</li>
+            <li data-en="HOW IT WORKS" data-tr="NASIL ÇALIŞIR" onclick="scrollToSection('Explanation')">HOW IT WORKS</li>
+            <li data-en="HISTORY" data-tr="TARİHÇE" onclick="scrollToSection('History')">HISTORY</li>
+            <li data-en="ACTIVITY FIELDS" data-tr="FAALİYET ALANLARI" onclick="scrollToSection('Activity')">ACTIVITY FIELDS</li>
+            <li data-en="REPORTING" data-tr="RAPORLAMA" onclick="scrollToSection('Reporting')">REPORTING</li>
+            <li data-en="CONTACT US" data-tr="İLETİŞİM" onclick="scrollToSection('Contact')">CONTACT US</li>
+            <li id="login1" data-en="LOGIN/SIGNUP" data-tr="GİRİŞ/KAYIT" data-bs-toggle="modal" data-bs-target="#loginSignupModal">LOGIN/SIGNUP</li>
+          </ul>
+</div>
+            
+          
+
+    </div>
+    <button onclick="scrollToSection('About')"><strong data-en="EXPLORE NOW" data-tr="ŞİMDİ KEŞFET">EXPLORE NOW</strong></button>
+</nav>
+
+<!-- Language switch buttons -->
+<div class="language">
+    <a id="Tr" href="#"><img class="bayrak" src="images/tr.jpg" alt="Tr"></a>
+    <a id="Eng" href="#"><img class="bayrak" src="images/ing.png" alt="Eng"></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginSignupModal" tabindex="-1" aria-labelledby="loginSignupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginSignupModalLabel" data-en="Login/Signup" data-tr="Giriş/Kayıt">Login/Signup</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true" data-en="Login" data-tr="Giriş">Login</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false" data-en="Signup" data-tr="Kayıt">Signup</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginUsername" class="form-label" data-en="Username" data-tr="Kullanıcı Adı">Username</label>
+                <input type="text" class="form-control" id="loginUsername" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label" data-en="Password" data-tr="Şifre">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary" data-en="Login" data-tr="Giriş">Login</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+            <form id="signupForm">
+              <div class="mb-3">
+                <label for="signupUsername" class="form-label" data-en="Username" data-tr="Kullanıcı Adı">Username</label>
+                <input type="text" class="form-control" id="signupUsername" required>
+              </div>
+              <div class="mb-3">
+                <label for="signupEmail" class="form-label" data-en="Email address" data-tr="E-posta Adresi">Email address</label>
+                <input type="email" class="form-control" id="signupEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword" class="form-label" data-en="Password" data-tr="Şifre">Password</label>
+                <input type="password" class="form-control" id="signupPassword" required>
+              </div>
+              <div class="mb-3">
+                <label for="signupConfirmPassword" class="form-label" data-en="Confirm Password" data-tr="Şifreyi Onayla">Confirm Password</label>
+                <input type="password" class="form-control" id="signupConfirmPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary" data-en="Signup" data-tr="Kayıt">Signup</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="About">
+    <h1 data-en="ABOUT" data-tr="HAKKINDA">ABOUT</h1>
+
+    <div class="about-container">
+    <img class="logo" src="images/logo.jpg.png" alt="">
+    <h3 class="about-text" data-en="iha-scales is a monitoring mechanism that measures how successfully an achievement test, a psychological scale, or an
+argument used in selecting employees has been prepared in terms of question quality.
+It is a very helpful system in terms of measuring how well a test, scale or argument meets the criteria in terms of
+reliability, validity and usefulness." data-tr="iha-scales, bir başarı testinin, psikolojik ölçeğin veya çalışanları seçmek için kullanılan bir argümanın soru kalitesi açısından ne kadar başarılı hazırlandığını ölçen bir izleme mekanizmasıdır. Bir testin, ölçeğin veya argümanın güvenilirlik, geçerlilik ve kullanışlılık açısından kriterleri ne kadar iyi karşıladığını ölçmek açısından çok yardımcı bir sistemdir.">
+        iha-scales is a monitoring mechanism that measures how successfully an achievement test, a psychological scale, or an
+argument used in selecting employees has been prepared in terms of question quality.
+It is a very helpful system in terms of measuring how well a test, scale or argument meets the criteria in terms of
+reliability, validity and usefulness.
+    </h3>
+</div>
+</section>
+
+<!-- Explanation Section -->
+<section id="Explanation">
+    <h1 data-en="HOW IT WORKS" data-tr="NASIL ÇALIŞIR">HOW IT WORKS</h1>
+    <div class="explanation-container">
+        <h3 data-en=" Upload your exam file to evaluate its quality. Our platform allows you to upload your files for evaluation. Once you sign up and log in, you can easily upload your files through the file upload page. Our team will then review and assess the quality of your files based on various criteria such as reliability, validity, and usefulness. You will receive detailed feedback and reports to help you improve your work.
+        " data-tr="Sınav dosyanızı yükleyerek kalitesini değerlendirin. Platformumuz, dosyalarınızı değerlendirmek için yüklemenize olanak tanır. Kaydolup giriş yaptıktan sonra dosyalarınızı dosya yükleme sayfası aracılığıyla kolayca yükleyebilirsiniz. Ekibimiz, dosyalarınızın güvenilirlik, geçerlilik ve kullanışlılık gibi çeşitli kriterlere göre kalitesini inceleyecek ve değerlendirecektir. İşinizi geliştirmenize yardımcı olacak detaylı geri bildirimler ve raporlar alacaksınız.">
+            Upload your exam file to evaluate its quality. Our platform allows you to upload your files for evaluation. Once you sign up and log in, you can easily upload your files through the file upload page. Our team will then review and assess the quality of your files based on various criteria such as reliability, validity, and usefulness. You will receive detailed feedback and reports to help you improve your work.
+        </h3>
+        <h3 data-en="To get started, simply sign up or log in using the 'LOGIN/SIGNUP' button above. After logging in, you will be redirected to the file upload page where you can submit your files for evaluation." data-tr="Başlamak için yukarıdaki 'GİRİŞ/KAYIT' düğmesini kullanarak sadece kaydolun veya giriş yapın. Giriş yaptıktan sonra, dosyalarınızı değerlendirmek için dosya yükleme sayfasına yönlendirileceksiniz.">
+            To get started, simply sign up or log in using the "LOGIN/SIGNUP" button above. After logging in, you will be redirected to the file upload page where you can submit your files for evaluation.
+        </h3>
+    </div>
+</section>
+
+<section id="History">
+    <h1 data-en="HISTORY" data-tr="TARİHÇE">HISTORY</h1>
+ 
+    <div class="history-container"> 
+        <h3 data-en="iha-scales was founded in 1991 with a preliminary study by Aydoğan ARI, a student at Boğaziçi University.
+        The system was designed between 1995 and 2006 under the name 'bilgi check-up' and was designed to evaluate the
+        qualities of tests and documents.
+        
+        Since 2007, this system called 'bilgiölçer' has been used in educational institutions and an interpretation system in which
+            each question (item) is analyzed has been put into operation. Using the bilgiölçer, the reliability, validity and usefulness
+            levels of the questions were determined.
+            As of 2024, it has gained the competence to test the reliability, validity and usefulness criteria of all measurement-evaluation systems under the umbrella of Zekasoft Incorporated Company."
+            data-tr="iha-scales, 1991 yılında Boğaziçi Üniversitesi öğrencisi Aydoğan ARI tarafından yapılan bir ön çalışma ile kuruldu.
+            Sistem, 1995 ve 2006 yılları arasında 'bilgi check-up' adı altında tasarlandı ve testlerin ve belgelerin kalitesini değerlendirmek için tasarlandı.
+            2007 yılından bu yana, 'bilgiölçer' adı verilen bu sistem eğitim kurumlarında kullanılmakta ve her bir sorunun (madde) analiz edildiği bir yorumlama sistemi devreye alınmıştır. Bilgiölçer kullanılarak soruların güvenilirlik, geçerlilik ve kullanışlılık düzeyleri belirlenmiştir.
+2024 itibarıyla, Zekasoft Incorporated Company çatısı altında tüm ölçme-değerlendirme sistemlerinin güvenilirlik, geçerlilik ve kullanışlılık kriterlerini test etme yetkinliğine sahip olmuştur.
+            ">iha-scales was founded in 1991 with a preliminary study by Aydoğan ARI, a student at Boğaziçi University.
+            The system was designed between 1995 and 2006 under the name "bilgi check-up" and was designed to evaluate the
+            qualities of tests and documents.
+            
+            Since 2007, this system called "bilgiölçer" has been used in educational institutions and an interpretation system in which
+            each question (item) is analyzed has been put into operation. Using the bilgiölçer, the reliability, validity and usefulness
+            levels of the questions were determined.
+            As of 2024, it has gained the competence to test the reliability, validity and usefulness criteria of all measurement-evaluation systems under the umbrella of Zekasoft Incorporated Company.
+        </h3>
+        <div class="resimss">
+<div class="resims">
+        <div class="img-row">
+            <img id="person" src="images/person.jpg" alt="Person">
+            <img id="bilgi" src="images/bilgi.jpg.jpeg" alt="Bilgi">
+        </div>
+        <div class="img-row-single"></div>
+            <img id="bilgi2" src="images/bilgi2.jpg.png" alt="Bilgi 2">
+        </div>
+        <img id="zeka" src="images/zeka.jpg" alt="Zeka">
+
+      </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="Activity">
+    <h1 data-tr="FAALİYET ALANLARI" data-en="ACTIVITY FIELDS">ACTIVITY FIELDS</h1>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong data-en="1- School performance measurements" data-tr="1- Okul performans ölçümleri"> 1- School performance measurements</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" data-en="Determining the fitness for purpose and measurement reliability of all kinds of measurement-evaluation arguments used in schools." data-tr="Okullarda kullanılan her türlü ölçme-değerlendirme argümanının amaca uygunluğunu ve ölçüm güvenilirliğini belirlemek.">Determining the fitness for purpose and measurement reliability of all kinds of measurement-evaluation arguments used in schools.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <strong data-en="2- Personnel selection tools" data-tr="2- Personel seçim araçları"> 2- Personnel selection tools </strong>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" data-en="Determining the fitness for purpose and measurement reliability of all kinds of measurement tools used in determining the suitable personnel for the job." data-tr="İşe uygun personelin belirlenmesinde kullanılan her türlü ölçüm aracının amaca uygunluğunu ve ölçüm güvenilirliğini belirlemek.">Determining the fitness for purpose and measurement reliability of all kinds of measurement tools used in determining the suitable personnel for the job.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <strong data-en="3- Assessment of Measurement Validity and Reliability" data-tr="3- Ölçüm Geçerliliği ve Güvenilirliğinin Değerlendirilmesi"> 3- Assessment of Measurement Validity and Reliability </strong>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" data-en="Determining the suitability for purpose and measurement reliability of the arguments used for measurement purposes in any field." data-tr="Herhangi bir alanda ölçüm amaçlı kullanılan argümanların amaca uygunluğunu ve ölçüm güvenilirliğini belirlemek.">Determining the suitability for purpose and measurement reliability of the arguments used for measurement purposes in any field.</div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="Reporting">
+
+    <h1 data-en="REPORTING" data-tr="RAPORLAMA">REPORTING</h1>
+    <br><br><br>
+
+    <h3 data-en="With iha-scales, reporting is done under the following headings:" data-tr="iha-scales ile raporlama aşağıdaki başlıklar altında yapılır:">With iha-scales, reporting is done under the following headings:</h3>
+    <br>
+    <div class="first">
+      <div class="block">
+        <h4 class="borderc" data-en="1- User test performance" data-tr="1- Kullanıcı test performansı"><strong> 1- User test performance </strong></h4> <br> <br>
+        <img id="analiz" class="1"   src="images/Resim1.png" alt="">
+      </div>
+      <div class="block">
+        <h4 class="borderc" data-en="2- Internal consistency of test items" data-tr="2- Test maddelerinin iç tutarlılığı"><strong>2- Internal consistency of test items</strong></h4>
+        <br><br>
+        <img id="analiz" class="2" src="images/Resim2.png" alt="">
+      </div>
+    </div>
+
+    <div class="second">
+      <h4 class="borderc" data-en="3- Difficulty and discrimination of test items" data-tr="3- Test maddelerinin zorluk ve ayırt ediciliği"><strong>3- Difficulty and discrimination of test items</strong></h4>
+      <br><br>
+      <div class="images">
+        <img id="analiz" class="3" src="images/Resim3.png" alt="">
+        <img id="analiz" class="4" src="images/Resim4.png" alt="">
+      </div>
+    </div>
+      
+    <div class="third">
+      <div class="border">
+        <h4 data-en="4- Selective items" data-tr="4- Seçici maddeler"><strong>4- Selective items </strong></h4>
+        <h5 data-en="Math exam selective items: Item 4 and Item 8" data-tr="Matematik sınavı seçici maddeler: Madde 4 ve Madde 8"><strong>Math exam selective items: Item 4 and Item 8 </strong></h5>
+      </div>
+      <br><br>
+      <div class="border">
+        <h4 data-en="5- Items that should be excluded from testing" data-tr="5- Testten çıkarılması gereken maddeler"><strong>5- Items that should be excluded from testing</strong></h4>
+        <h5 data-en="No item that should be excluded from testing" data-tr="Testten çıkarılması gereken madde yok"><strong> No item that should be excluded from testing</strong></h5>
+      </div>
+      <br><br>
+      <div class="border">
+        <h4 data-en="6- Items that need to be replaced" data-tr="6- Değiştirilmesi gereken maddeler"><strong>6- Items that need to be replaced</strong></h4>
+        <h5 data-en="No item that need to be replaced" data-tr="Değiştirilmesi gereken madde yok"><strong> No item that need to be replaced </strong></h5>
+      </div>
+    </div>
+
+    <div class="last">
+      <h4 class="borderc" data-en="7- Additional study (study) list" data-tr="7- Ek çalışma (çalışma) listesi"><strong>7- Additional study (study) list</strong></h4>
+      <br><br>
+      <img id="analiz" class="5" src="images/Resim5.png" alt="">
+    </div>
+    </section>
+
+
+<section id="Contact">
+    <h1 data-en="CONTACT US" data-tr="İLETİŞİM">CONTACT US</h1>
+    <div class="map">
+    <iframe class="harita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.020291901186!2d13.385162076193568!3d52.533067035262576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851edec9046c9%3A0x844192ace6704be7!2sGartenstra%C3%9Fe%2085%2C%2010115%20Berlin%2C%20Almanya!5e0!3m2!1str!2str!4v1738779485677!5m2!1str!2str" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-info" style="margin-top: 20px;">
+        <div class="map-info-item">
+            <img src="images/icons8-map.gif" alt=""><p> : Gartenstraße 85, 10115 Berlin, Germany </p>
+        </div>
+        <div class="map-info-item">
+            <img src="images/icons8-phone.gif" alt=""><p> : +44 7496 416327 </p>
+        </div>
+        <div class="map-info-item">
+            <img src="images/icons8-mail.gif" alt=""><p> : info@iha-scales.com  </p>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer style="bottom: 0; width: 100%; display: flex; align-items: center; justify-content: center;">
+    <p>Powered by Celil Çirik <a href="http://celilcirik.com.tr/?i=1"><i class="fa-solid fa-circle-info" style="color: #74C0FC;"></i></a></p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>
