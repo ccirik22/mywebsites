@@ -3,134 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celil Çirik - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>CELİL ÇİRİK - Web Tasarımcısı & UI/UX Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">CELİL ÇİRİK</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Ana Sayfa</a>
+                <a href="#about" class="nav-link">Hakkımda</a>
+                <a href="#projects" class="nav-link">Projeler</a>
+                <a href="#services" class="nav-link">Hizmetler</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<body class="portfolio-dark-theme">
-    <div class="portfolio-container">
-        <!-- Header -->
-        <header class="portfolio-header">
-            <h1>Celil Çirik</h1>
-            <p>Web Developer & Designer</p>
-        </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" id="typing-text"></h1>
+            <span class="cursor">|</span>
+            <p class="hero-subtitle">Web Tasarımcısı & UI/UX Designer</p>
+            <p class="hero-description">
+                Modern ve kullanıcı dostu web siteleri tasarlayan deneyimli bir tasarımcı.<br>
+                Her projede estetik ve fonksiyonelliği mükemmel şekilde birleştiriyorum.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                    Projelerimi İncele
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                    Benimle İletişime Geç
+                </button>
+            </div>
+        </div>
+        
+        <!-- Animated background elements -->
+        <div class="bg-animations">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section class="portfolio-projects-section">
-            <h2 class="portfolio-section-title">Projelerim</h2>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hakkımda</h2>
+                <div class="section-divider"></div>
+            </div>
             
-            <div class="portfolio-projects-grid">
-                <!-- Tekstil Sitesi -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-image" style="font-size: 3rem; color: #666;"></i>
-                            <img src="images/logo1 (1).png" alt="">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Merhaba! Ben Celil</h3>
+                    <p class="about-description">
+                        Modern ve kullanıcı dostu web siteleri tasarlayan deneyimli bir web tasarımcısıyım. 
+                        Her projede estetik ve fonksiyonelliği bir araya getirerek mükemmel dijital deneyimler yaratıyorum.
+                    </p>
+                    <p class="about-description">
+                        5+ yıllık deneyimimle markalara dijital dünyada güçlü bir varlık kazandırıyorum. 
+                        Modern tasarım trendlerini takip ederek, kullanıcı deneyimini her zaman ön planda tutuyorum.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>celil.cirik.7@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+90 541 600 9740</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>@celil_lx</span>
                         </div>
                     </div>
-                    <h3 class="portfolio-project-title">Tekstil Sitesi</h3>
-                    <p class="portfolio-project-description">Modern ve kullanıcı dostu tekstil e-ticaret platformu</p>
-                    <a href="tekstil.html" class="portfolio-project-link">Projeyi İncele</a>
                 </div>
-
-                <!-- QR Kod Oluşturucu -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-qrcode" style="font-size: 3rem; color: #666;"></i>
+                
+                <div class="about-image">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="images/pp.jpeg" alt="Celil Çirik">
                         </div>
+                        <div class="profile-animation"></div>
                     </div>
-                    <h3 class="portfolio-project-title">QR Kod Oluşturucu</h3>
-                    <p class="portfolio-project-description">Dinamik QR kod oluşturma ve yönetim sistemi</p>
-                    <a href="qr.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- Tasarım Sitesi -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-palette" style="font-size: 3rem; color: #666;"></i>
-                            <img src="assets/img/moon.jpg.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">Tasarım Sitesi</h3>
-                    <p class="portfolio-project-description">Yaratıcı tasarım portföyü ve showcase platformu</p>
-                    <a href="fake.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- IHA Scale -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-drone" style="font-size: 3rem; color: #666;"></i>
-                            <img src="images/zeka.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">IHA Scale</h3>
-                    <p class="portfolio-project-description">Şirket Tanıtımı</p>
-                    <a href="iha.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- IHA Schema -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-sitemap" style="font-size: 3rem; color: #666;"></i>
-                            <img src="images/2.webp" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">IHA Schema</h3>
-                    <p class="portfolio-project-description">Şirket Tanıtımı</p>
-                    <a href="iha2.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- IHA Test -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <img src="images/bgnew2.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">IHA Test</h3>
-                    <p class="portfolio-project-description">IHA sistemleri test ve simülasyon platformu</p>
-                    <a href="ih-test.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- IHA Özel -->
-                <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <i class="fas fa-cog" style="font-size: 3rem; color: #666;"></i>
-                            <img src="images/cplogo.png" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">Cosplay Game</h3>
-                    <p class="portfolio-project-description">Arkadaşlarınızla kaliteli vakit geçirin</p>
-                    <a href="cp.html" class="portfolio-project-link">Projeyi İncele</a>
-                </div>
-
-                <!-- Autopulse -->
-
-                  <div class="portfolio-project-card">
-                    <div class="portfolio-project-preview">
-                        <div class="portfolio-preview-placeholder">
-                            <img src="images/blog1.jpeg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="portfolio-project-title">Autopulse</h3>
-                    <p class="portfolio-project-description">Araba kanalı</p>
-                    <a href="auto.html" class="portfolio-project-link">Projeyi İncele</a>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hizmetlerim</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Web Tasarımı</h3>
+                    <p class="service-description">Modern ve kullanıcı dostu web siteleri tasarlıyorum</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Tasarım</h3>
+                    <p class="service-description">Kullanıcı deneyimini ön planda tutan arayüz tasarımları</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-ticaret Çözümleri</h3>
+                    <p class="service-description">Satış odaklı e-ticaret platformları geliştiriyorum</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Marka Kimliği</h3>
+                    <p class="service-description">Güçlü marka kimlikleri ve görsel tasarım çözümleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projelerim</h2>
+                <div class="section-divider"></div>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" id="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="E-ticaret">E-ticaret</button>
+                    <button class="filter-btn" data-filter="Kurumsal">Kurumsal</button>
+                    <button class="filter-btn" data-filter="Blog">Blog</button>
+                    <button class="filter-btn" data-filter="Restoran">Restoran</button>
+                    <button class="filter-btn" data-filter="SaaS">SaaS</button>
+                    <button class="filter-btn" data-filter="Sanat">Sanat</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="portfolio-footer">
-            <p>Powered By Celil Çirik <i class="fa-solid fa-circle-info"></i></p>
-  
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-title">İletişime Geçelim</h3>
+            <p class="footer-description">
+                Yeni bir projede birlikte çalışmak için sabırsızlanıyorum.<br>
+                Hayalinizdeki web sitesini birlikte yaratabilir miyiz?
+            </p>
+            
+            <div class="social-links">
+                <a href="mailto:celil.cirik@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">
+                © 2024 Celil Çirik. Tüm hakları saklıdır.
+            </p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
