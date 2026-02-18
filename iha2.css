@@ -354,6 +354,11 @@ section p{
    border: 1px solid gray;
 }
 
+.map .harita {
+    max-width: 100%;
+    width: 100%;
+}
+
 .adres{
     background-color: #34383d;
     padding: 20px;
@@ -473,73 +478,153 @@ nav ul li{
 }
 
 @media (max-width: 780px){
+    section {
+        padding: 24px 16px !important;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 70px;
+        padding: 12px 8px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        width: 140px !important;
+        max-width: 50%;
+        margin-left: 8px;
+    }
 
     h1{
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
+
     .firstnav{
         display: none;
     }
 
     .dropdown{
-        display: block !important; 
-        position: absolute;
-        right: 20px; /* Ensure it stays on the right side */
+        display: block !important;
+        position: static;
+        margin-left: auto;
     }
 
-    nav img {
-        margin-left: 20px; /* Adjust logo margin for better alignment */
+    .aboutimg {
+        flex-direction: column;
+        gap: 24px;
     }
 
     .aboutimg img {
-        width: 100px;
-        height: 100px;
+        width: 100% !important;
+        max-width: 280px;
+        height: auto !important;
     }
 
-    .flags img{
-        width: 60px;
-        height: 60px;
+    .flags {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
 
-    .flags h3{
-        font-size: 7px;
-        margin-top: 5px;
+    .flags img {
+        width: 64px;
+        height: 64px;
     }
 
-    .infocountry img{
-        width: 300px;
-        height: 250px;
+    .flags h3 {
+        font-size: 12px !important;
+        margin-top: 6px;
     }
 
-  .harita{
-    width: 1000px;
-    height: 300px;
-  }
+    .infocountry {
+        margin-top: 32px;
+    }
 
-  .wp{
-    width: 100%;
-    font-size: 15px;
-    margin-left: 0;
-    padding-right: 0;
-    white-space: nowrap; /* Ensure text does not wrap */
+    .infocountry img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    .infocountry p {
+        padding: 0 8px;
+    }
+
+    .cert-cards {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .gallery-images img,
+    .gallery-images #last {
+        height: auto !important;
+        min-height: 180px;
+    }
+
+    .map {
+        padding: 0 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .harita {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 260px !important;
+    }
+
+    .adres {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
+        gap: 16px;
+    }
+
+    .adress {
+        width: 100%;
+    }
+
+    .adress p {
+        padding-left: 0 !important;
+        font-size: 13px !important;
+        margin-top: 8px !important;
+    }
+
+    .adress h2 {
+        font-size: 14px !important;
+    }
+
+    .wp {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding-right: 0 !important;
+        white-space: normal !important;
+        justify-content: flex-start;
+    }
+
+    footer p {
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+    }
 }
 
-.adress p{
-    font-size: 8px;
-    margin-top: -40px;
-}
+@media (max-width: 480px) {
+    nav img {
+        width: 100px !important;
+    }
 
-.adress h2{
-    font-size: 16px;
-}
-
-footer p{
-    font-size: 10px;
-    padding: 5px 2px;
-}
-
-
-
+    h1 {
+        font-size: 20px !important;
+    }
 }
 
 
