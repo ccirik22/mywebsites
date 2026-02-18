@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS Studio | Dijital Deneyimler Yaratıyoruz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="versus.css">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">
+            <span class="logo-text">NEXUS</span>
+            <span class="logo-dot"></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#hero">Ana Sayfa</a></li>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#work">Projeler</a></li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <button class="nav-cta">Başlayalım</button>
+        <button class="menu-toggle" aria-label="Menü">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-overlay"></div>
+    </nav>
+
+    <!-- Announcement / Marquee Bar -->
+    <div class="announcement-bar">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Web Tasarım</span>
+                <span class="dot">◆</span>
+                <span>UI/UX</span>
+                <span class="dot">◆</span>
+                <span>Branding</span>
+                <span class="dot">◆</span>
+                <span>Animasyon</span>
+                <span class="dot">◆</span>
+                <span>E-Commerce</span>
+                <span class="dot">◆</span>
+                <span>Mobil Uygulama</span>
+                <span class="dot">◆</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>Web Tasarım</span>
+                <span class="dot">◆</span>
+                <span>UI/UX</span>
+                <span class="dot">◆</span>
+                <span>Branding</span>
+                <span class="dot">◆</span>
+                <span>Animasyon</span>
+                <span class="dot">◆</span>
+                <span>E-Commerce</span>
+                <span class="dot">◆</span>
+                <span>Mobil Uygulama</span>
+                <span class="dot">◆</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-badge animate-in">
+            <span class="pulse-dot"></span>
+            Dijital Stüdyo · Est. 2025
+        </div>
+        <p class="hero-tagline animate-in delay-1">Tasarımla fark yaratıyoruz.</p>
+        <a href="#" class="hero-logo animate-in delay-2">
+            <span class="hero-logo-text">NEXUS</span>
+            <span class="hero-logo-dot"></span>
+        </a>
+        <h1 class="hero-title">
+            <span class="line animate-in"><span class="word">Geleceği</span></span>
+            <span class="line animate-in delay-1"><span class="word">Bugün</span></span>
+            <span class="line animate-in delay-2"><span class="word gradient-text">Tasarliyoruz</span></span>
+        </h1>
+        <p class="hero-subtitle animate-in delay-4">
+            Markanızı dijital dünyada unutulmaz deneyimlere dönüştürüyoruz.
+            Web, mobil ve etkileşimli projelerde sınır tanımıyoruz.
+        </p>
+        <div class="hero-cta animate-in delay-4">
+            <a href="#work" class="btn btn-primary">
+                <span>Projeleri Keşfet</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">İletişime Geç</a>
+        </div>
+        <div class="hero-stats animate-in delay-5">
+            <div class="stat">
+                <span class="stat-number" data-target="150">0</span>+
+                <span class="stat-label">Proje</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="98">0</span>%
+                <span class="stat-label">Müşteri Memnuniyeti</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="12">0</span>
+                <span class="stat-label">Ödül</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-tag">Hizmetlerimiz</span>
+            <h2 class="section-title">Neler <span class="gradient-text">Sunuyoruz</span></h2>
+            <p class="section-desc">Dijital dünyada fark yaratmak için ihtiyacınız olan her şey</p>
+        </div>
+        <div class="services-grid">
+            <article class="service-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-icon">◆</div>
+                <h3>Web Tasarım</h3>
+                <p>Responsive, hızlı ve estetik web siteleri. Kullanıcı deneyimini ön planda tutan çözümler.</p>
+                <a href="#" class="card-link">
+                    Keşfet <span>→</span>
+                </a>
+            </article>
+            <article class="service-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-icon">◇</div>
+                <h3>UI/UX Tasarım</h3>
+                <p>Kullanıcı odaklı arayüz tasarımları. Her tıklamada markanızı hissettiren deneyimler.</p>
+                <a href="#" class="card-link">
+                    Keşfet <span>→</span>
+                </a>
+            </article>
+            <article class="service-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-icon">○</div>
+                <h3>Animasyon</h3>
+                <p>Göz alıcı hareketler ve mikro-etkileşimler. Statik olan her şeye hayat veriyoruz.</p>
+                <a href="#" class="card-link">
+                    Keşfet <span>→</span>
+                </a>
+            </article>
+            <article class="service-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-icon">△</div>
+                <h3>Marka Kimliği</h3>
+                <p>Logo, renk paleti ve görsel dil. Markanızın hikayesini anlatan tutarlı kimlik.</p>
+                <a href="#" class="card-link">
+                    Keşfet <span>→</span>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="section-header">
+            <span class="section-tag">Portföy</span>
+            <h2 class="section-title">Seçili <span class="gradient-text">Projeler</span></h2>
+        </div>
+        <div class="work-gallery">
+            <div class="work-item large">
+                <div class="work-image">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=900&q=80" alt="Aurora E-Commerce - Lüks moda mağazası" loading="lazy">
+                    <div class="work-overlay">
+                        <h3>Aurora E-Commerce</h3>
+                        <p>Lüks moda platformu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Nebula SaaS - Analytics dashboard" loading="lazy">
+                    <div class="work-overlay">
+                        <h3>Nebula SaaS</h3>
+                        <p>Dashboard arayüzü</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80" alt="Pulse Music - Müzik dinleme" loading="lazy">
+                    <div class="work-overlay">
+                        <h3>Pulse Music</h3>
+                        <p>Streaming uygulaması</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Vertex Agency - Modern ofis" loading="lazy">
+                    <div class="work-overlay">
+                        <h3>Vertex Agency</h3>
+                        <p>Kurumsal site</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item large">
+                <div class="work-image">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=900&q=80" alt="Prism Crypto - Dijital finans" loading="lazy">
+                    <div class="work-overlay">
+                        <h3>Prism Crypto</h3>
+                        <p>Blockchain arayüzü</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <span class="section-tag">Hakkımızda</span>
+                <h2 class="section-title">Tasarım tutkusu, <span class="gradient-text">teknoloji</span> ile buluşuyor</h2>
+                <p>NEXUS Studio olarak, her projeyi benzersiz bir sanat eseri gibi ele alıyoruz. Küçük detaylardan büyük vizyona, markanızın dijital yolculuğunda yanınızdayız.</p>
+                <ul class="about-features">
+                    <li><span class="check">✓</span> 5+ yıl sektör deneyimi</li>
+                    <li><span class="check">✓</span> Dünya çapında müşteriler</li>
+                    <li><span class="check">✓</span> Agile çalışma metodolojisi</li>
+                    <li><span class="check">✓</span> Sürekli inovasyon odaklı</li>
+                </ul>
+            </div>
+            <div class="about-visual">
+                <div class="floating-card card-1">
+                    <span class="card-emoji">🎨</span>
+                    <span>Tasarım</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-emoji">⚡</span>
+                    <span>Performans</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-emoji">✨</span>
+                    <span>İnovasyon</span>
+                </div>
+                <div class="about-center">
+                    <div class="center-glow"></div>
+                    <span>NEXUS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-wrapper">
+            <div class="contact-content">
+                <h2 class="contact-title">Bir sonraki projenizi <span class="gradient-text">birlikte</span> hayal edelim</h2>
+                <p>Fikirlerinizi dinlemek için sabırsızlanıyoruz. Hadi konuşalım!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-posta" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Projeniz hakkında bize bilgi verin..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Gönder</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <span class="info-label">E-posta</span>
+                    <a href="mailto:hello@nexus.studio">hello@nexus.studio</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Sosyal</span>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Dribbble</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <span class="logo-text">NEXUS</span>
+                <span class="logo-dot"></span>
+            </a>
+            <p>© 2025 NEXUS Studio. Tüm hakları saklıdır.</p>
+            <div class="footer-links">
+                <a href="#">Gizlilik</a>
+                <a href="#">Şartlar</a>
+                <a href="#">Çerezler</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="versus.js"></script>
+</body>
+</html>

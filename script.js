@@ -11,87 +11,17 @@ const portfolioData = {
     },
     
     projects: [
+    
         {
-            id: 1,
-            title: "Lüks E-ticaret Platformu",
+            id: 16,
+            title: "Versus",
             category: "E-ticaret",
-            description: "Premium moda markası için tasarlanan modern e-ticaret sitesi. Minimalist tasarım anlayışı ile kullanıcı deneyimini ön planda tutan çözüm.",
-            technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+            description: "Versus markası için tasarlanan web projesi. Modern arayüz ve kullanıcı deneyimi odaklı tasarım.",
+            technologies: ["HTML5", "CSS3", "JavaScript"],
             year: "2024",
-            client: "Luxury Fashion Co.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
-        },
-        {
-            id: 2,
-            title: "Kurumsal Web Sitesi",
-            category: "Kurumsal",
-            description: "Teknoloji şirketi için profesyonel kurumsal web sitesi. Modern tasarım dili ve güçlü içerik yönetim sistemi ile entegre edildi.",
-            technologies: ["WordPress", "PHP", "MySQL", "GSAP"],
-            year: "2024",
-            client: "TechCorp Industries",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
-        },
-        {
-            id: 3,
-            title: "Kişisel Blog Platformu",
-            category: "Blog",
-            description: "Yazar ve içerik üreticileri için özel tasarlanmış blog platformu. Temiz tipografi ve okunabilirlik odaklı tasarım.",
-            technologies: ["Next.js", "Tailwind CSS", "Sanity CMS"],
-            year: "2023",
-            client: "Creative Writers Hub",
-            image: "https://images.unsplash.com/photo-1486312338219-ce68e2c14b2a?w=800&h=600&fit=crop"
-        },
-        {
-            id: 4,
-            title: "Restoran Web Sitesi",
-            category: "Restoran",
-            description: "Fine dining restoranı için tasarlanan elegant web sitesi. Online rezervasyon sistemi ve interaktif menü özelliği.",
-            technologies: ["Vue.js", "Firebase", "Stripe", "Maps API"],
-            year: "2024",
-            client: "Bella Vista Restaurant",
-            image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-        },
-        {
-            id: 5,
-            title: "SaaS Dashboard",
-            category: "SaaS",
-            description: "Veri analizi şirketi için geliştirilmiş kapsamlı dashboard arayüzü. Karmaşık verileri basit ve anlaşılır şekilde sunan tasarım.",
-            technologies: ["React", "D3.js", "PostgreSQL", "Express"],
-            year: "2023",
-            client: "DataFlow Analytics",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-        },
-        {
-            id: 6,
-            title: "Sanat Galerisi Portfolyosu",
-            category: "Sanat",
-            description: "Çağdaş sanatçı için tasarlanan portfolyo web sitesi. Eserleri en iyi şekilde sergileyen minimal ve etkileyici tasarım.",
-            technologies: ["Gatsby", "GraphQL", "Contentful", "GSAP"],
-            year: "2024",
-            client: "Modern Art Gallery",
-            image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop"
-        },
-        {
-            id: 7,
-            title: "Tekstil E-ticaret Sitesi",
-            category: "E-ticaret",
-            description: "Modern ve kullanıcı dostu tekstil e-ticaret platformu. Çok dilli destek ve responsive tasarım ile Braça markası için geliştirildi.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-            year: "2024",
-            client: "Braça Tekstil",
-            image: "images/logo1 (1).png",
-            link: "tekstil.html"
-        },
-        {
-            id: 8,
-            title: "QR Kod Oluşturucu",
-            category: "SaaS",
-            description: "Dinamik QR kod oluşturma ve yönetim sistemi. Kullanıcı dostu arayüz ile hızlı QR kod üretimi ve özelleştirme seçenekleri.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "QR.js"],
-            year: "2024",
-            client: "QR Solutions",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-            link: "qr.html"
+            client: "Versus",
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+            link: "versus.html"
         },
         {
             id: 9,
@@ -104,27 +34,17 @@ const portfolioData = {
             image: "assets/img/moon.jpg.jpg",
             link: "fake.html"
         },
+    
         {
-            id: 10,
-            title: "IHA Scale - Şirket Tanıtımı",
+            id: 15,
+            title: "Mimar",
             category: "Kurumsal",
-            description: "IHA (İnsansız Hava Aracı) şirketi için profesyonel tanıtım sitesi. Teknoloji odaklı modern tasarım ve şirket bilgileri.",
+            description: "Mimarlık ofisi veya yapı projeleri için kurumsal tanıtım sitesi. Proje portfolyosu ve hizmet sunumu.",
             technologies: ["HTML5", "CSS3", "JavaScript"],
             year: "2024",
-            client: "IHA Scale",
-            image: "images/zeka.jpg",
-            link: "iha.html"
-        },
-        {
-            id: 11,
-            title: "IHA Schema - Şirket Tanıtımı",
-            category: "Kurumsal",
-            description: "IHA teknolojileri şirketi için kurumsal web sitesi. Sistem mimarisi ve çözümlerin detaylı tanıtımı.",
-            technologies: ["HTML5", "CSS3", "JavaScript"],
-            year: "2024",
-            client: "IHA Schema",
-            image: "images/2.webp",
-            link: "iha2.html"
+            client: "Mimar",
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
+            link: "mimar.html"
         },
         {
             id: 12,
@@ -138,15 +58,39 @@ const portfolioData = {
             link: "ih-test.html"
         },
         {
-            id: 13,
-            title: "Cosplay Game",
-            category: "Blog",
-            description: "Arkadaşlarınızla kaliteli vakit geçirin. Eğlenceli cosplay oyunu ve topluluk platformu ile sosyal etkileşim.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Game Engine"],
+            id: 8,
+            title: "QR Kod Oluşturucu",
+            category: "SaaS",
+            description: "Dinamik QR kod oluşturma ve yönetim sistemi. Kullanıcı dostu arayüz ile hızlı QR kod üretimi ve özelleştirme seçenekleri.",
+            technologies: ["HTML5", "CSS3", "JavaScript", "QR.js"],
             year: "2024",
-            client: "Cosplay Community",
-            image: "images/cplogo.png",
-            link: "cp.html"
+            client: "QR Solutions",
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+            link: "qr.html"
+        },
+   
+        {
+            id: 11,
+            title: "IHA Schema - Şirket Tanıtımı",
+            category: "Kurumsal",
+            description: "IHA teknolojileri şirketi için kurumsal web sitesi. Sistem mimarisi ve çözümlerin detaylı tanıtımı.",
+            technologies: ["HTML5", "CSS3", "JavaScript"],
+            year: "2024",
+            client: "IHA Schema",
+            image: "images/2.webp",
+            link: "iha2.html"
+        },
+     
+        {
+            id: 7,
+            title: "Tekstil E-ticaret Sitesi",
+            category: "E-ticaret",
+            description: "Modern ve kullanıcı dostu tekstil e-ticaret platformu. Çok dilli destek ve responsive tasarım ile Braça markası için geliştirildi.",
+            technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+            year: "2024",
+            client: "Braça Tekstil",
+            image: "images/logo1 (1).png",
+            link: "tekstil.html"
         },
         {
             id: 14,
@@ -158,14 +102,24 @@ const portfolioData = {
             client: "Autopulse Media",
             image: "images/blog1.jpeg",
             link: "auto.html"
-        }
-       
+        },
+
+    ],
+    // Proje dosyası olmayan (aşağıda gösterilecek)
+    projectsNoFile: [
+        { id: 1, title: "Lüks E-ticaret Platformu", category: "E-ticaret", description: "Premium moda markası için tasarlanan modern e-ticaret sitesi.", year: "2024", client: "Luxury Fashion Co.", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" },
+        { id: 2, title: "Kurumsal Web Sitesi", category: "Kurumsal", description: "Teknoloji şirketi için profesyonel kurumsal web sitesi.", year: "2024", client: "TechCorp Industries", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" },
+        { id: 3, title: "Kişisel Blog Platformu", category: "Blog", description: "Yazar ve içerik üreticileri için özel tasarlanmış blog platformu.", year: "2023", client: "Creative Writers Hub", image: "https://images.unsplash.com/photo-1486312338219-ce68e2c14b2a?w=800&h=600&fit=crop" },
+        { id: 4, title: "Restoran Web Sitesi", category: "Restoran", description: "Fine dining restoranı için tasarlanan elegant web sitesi.", year: "2024", client: "Bella Vista Restaurant", image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop" },
+        { id: 5, title: "SaaS Dashboard", category: "SaaS", description: "Veri analizi şirketi için geliştirilmiş kapsamlı dashboard arayüzü.", year: "2023", client: "DataFlow Analytics", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" },
+        { id: 6, title: "Sanat Galerisi Portfolyosu", category: "Sanat", description: "Çağdaş sanatçı için tasarlanan portfolyo web sitesi.", year: "2024", client: "Modern Art Gallery", image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop" }
     ]
 };
 
 // DOM Elements
 const typingElement = document.getElementById('typing-text');
 const projectsGrid = document.getElementById('projects-grid');
+const projectsNoFileGrid = document.getElementById('projects-no-file');
 const filterButtons = document.getElementById('filter-buttons');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
@@ -220,12 +174,10 @@ function toggleMobileMenu() {
     });
 }
 
-// Render Projects
+// Render Projects (sadece linki olan projeler)
 function renderProjects(projects = portfolioData.projects) {
-    // Add loading state
     projectsGrid.innerHTML = '<div class="projects-loading">Projeler yükleniyor...</div>';
     
-    // Simulate loading delay for better UX
     setTimeout(() => {
         projectsGrid.innerHTML = projects.map((project, index) => `
             <div class="project-card fade-in" data-category="${project.category}" style="animation-delay: ${index * 0.1}s">
@@ -253,9 +205,30 @@ function renderProjects(projects = portfolioData.projects) {
             </div>
         `).join('');
         
-        // Trigger animation
         observeElements();
     }, 300);
+}
+
+// Proje dosyası olmayan projeleri aşağıda render et
+function renderProjectsNoFile() {
+    if (!projectsNoFileGrid || !portfolioData.projectsNoFile) return;
+    projectsNoFileGrid.innerHTML = portfolioData.projectsNoFile.map((project, index) => `
+        <div class="project-card fade-in project-card--no-file" style="animation-delay: ${index * 0.05}s">
+            <div class="project-image">
+                <img src="${project.image}" alt="${project.title}" loading="lazy">
+            </div>
+            <div class="project-info">
+                <span class="project-category">${project.category}</span>
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-description">${project.description}</p>
+                <div class="project-meta">
+                    <span class="project-year">${project.year}</span>
+                    <span class="project-client">${project.client}</span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    observeElements();
 }
 
 // Filter Projects
@@ -273,7 +246,7 @@ function setupProjectFilters() {
             const filter = e.target.dataset.filter;
             
             if (filter === 'all') {
-                renderProjects();
+                renderProjects(portfolioData.projects);
             } else {
                 const filteredProjects = portfolioData.projects.filter(
                     project => project.category === filter
@@ -394,8 +367,11 @@ function init() {
     // Setup parallax effect
     setupParallax();
     
-    // Render initial projects
-    renderProjects();
+    // Render initial projects (sadece linki olanlar)
+    renderProjects(portfolioData.projects);
+    
+    // Proje dosyası olmayan projeleri aşağıda render et
+    renderProjectsNoFile();
     
     // Setup project filters
     setupProjectFilters();
